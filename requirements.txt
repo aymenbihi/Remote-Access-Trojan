@@ -1,0 +1,7 @@
+opencv-python
+pillow
+sounddevice
+lameenc
+pyopenssl
+cryptography
+pyinstaller
